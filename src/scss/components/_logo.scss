@@ -1,0 +1,26 @@
+@use "../abstracts/media" as *;
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include mobile {
+    gap: 8px;
+  }
+  &__image {
+    @include mobile {
+      width: 25px;
+      height: 20px;
+    }
+  }
+  &__description {
+    font-size: 26px;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}

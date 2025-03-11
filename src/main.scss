@@ -1,0 +1,46 @@
+@use "./scss/abstracts/media";
+@use "./scss/abstracts/variables";
+@use "./scss/abstracts/mixins";
+@use "./scss/abstracts/utils";
+
+@use "./scss/base/fonts";
+@use "./scss/base/globals";
+@use "./scss/base/normalize";
+
+@use "./scss/blocks/userInformation/user-information";
+
+@use "./scss/layout/header";
+@use "./scss/layout/loader";
+@use "./scss/layout/modal";
+
+@use "./scss/components/account-form";
+@use "./scss/components/account-page";
+@use "./scss/components/account";
+@use "./scss/components/burger-button";
+@use "./scss/components/button";
+@use "./scss/components/card-statistics";
+@use "./scss/components/toggle-visibility";
+@use "./scss/components/card";
+@use "./scss/components/checkbox";
+@use "./scss/components/close-button";
+@use "./scss/components/financial-blocks";
+@use "./scss/components/hidden-information";
+@use "./scss/components/input-warn";
+@use "./scss/components/input";
+@use "./scss/components/logo";
+@use "./scss/components/parts";
+@use "./scss/components/select";
+@use "./scss/components/sidebar";
+
+@use "./scss/components/transactions";
+@use "./scss/components/user-photo";
+
+@use "./scss/blocks/dashboard/dashboard";
+
+@use "./scss/blocks/addCard/card-form";
+
+@use "./scss/blocks/updateCard/update-card";
+
+@use "./scss/blocks/cardInformation/card-information";
+
+@use "./scss/blocks/cardsInformation/cards-information";

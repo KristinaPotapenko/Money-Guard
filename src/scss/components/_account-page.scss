@@ -1,0 +1,24 @@
+@use "../abstracts/media" as *;
+
+.account-page {
+  min-height: 100vh;
+
+  @include mobile-above {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    width: 40%;
+    border-inline: 3px solid var(--color-light);
+
+    @include tablet {
+      width: 60%;
+    }
+
+    @include mobile {
+      width: 100%;
+      border-inline: none;
+    }
+  }
+}

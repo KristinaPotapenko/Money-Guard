@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/media" as *;
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  transition-duration: var(--transition-duration);
+
+  &__emulator {
+    position: relative;
+    min-width: 24px;
+    height: 24px;
+    border: var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+
+    @include hover {
+      box-shadow: 1px 1px 20px 1px var(--color-light-second);
+    }
+    &--active {
+      @include abs-center;
+      @include square(24px);
+
+      content: "";
+      background-color: var(--color-light);
+      border-radius: inherit;
+      transition-duration: var(--transition-duration);
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-light-second);
+
+    &--underline {
+      text-decoration: underline;
+    }
+  }
+}

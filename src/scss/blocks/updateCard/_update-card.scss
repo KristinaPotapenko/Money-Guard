@@ -1,0 +1,7 @@
+@use "../../abstracts/mixins" as *;
+
+.update-card {
+  &__cvv {
+    position: relative;
+  }
+}

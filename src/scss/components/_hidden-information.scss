@@ -1,0 +1,42 @@
+.hidden-information {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  height: 100%;
+  width: 105%;
+
+  background-color: var(--color-dark);
+  overflow: hidden;
+  z-index: 3;
+
+  &--clickable {
+    max-width: 70px;
+    cursor: text;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: var(--cursor-position, 0px);
+      translate: 0 -50%;
+      height: 80%;
+      width: 1px;
+      background-color: var(--color-light);
+      animation: blink 1s step-end infinite;
+    }
+  }
+
+  &--decoration {
+    display: flex;
+    align-items: center;
+    left: 16px;
+    height: var(--input-height);
+  }
+
+  &-text {
+    font: caption;
+    font-size: 14px;
+    font-weight: 800;
+  }
+}

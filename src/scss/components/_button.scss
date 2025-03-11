@@ -1,0 +1,40 @@
+@use "../abstracts/media" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 170px;
+  min-height: var(--button-height);
+  margin-bottom: 16px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-light);
+  border: 2px solid var(--color-light);
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-dark);
+  transition-duration: var(--transition-duration);
+  cursor: pointer;
+
+  @include hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    svg path {
+      stroke: var(--color-dark);
+    }
+  }
+
+  &--large {
+    margin: 0 auto;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    width: 60%;
+
+    @include tablet {
+      grid-column-end: 2;
+    }
+  }
+}

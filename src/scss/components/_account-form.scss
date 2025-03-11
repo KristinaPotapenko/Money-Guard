@@ -1,0 +1,60 @@
+@use "../abstracts/media" as *;
+
+.account-form {
+  &__content {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 70%;
+    margin-bottom: 70px;
+
+    @include tablet {
+      width: 80%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    &--small {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-light-second);
+
+    @include hover {
+      color: var(--color-light);
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+
+    &--stretched {
+      width: 100%;
+    }
+  }
+}

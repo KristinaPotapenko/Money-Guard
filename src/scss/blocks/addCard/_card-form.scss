@@ -1,0 +1,193 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/media" as *;
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+
+    @include desktop {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__front,
+  &__back {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 24px;
+    width: 50%;
+    max-width: 420px;
+    min-height: 200px;
+    padding: 20px 16px 52px 16px;
+    background-color: var(--color-dark);
+    border: 2px solid var(--color-light);
+    border-radius: var(--border-radius-medium);
+
+    @include desktop {
+      width: 100%;
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 32px;
+      left: 0px;
+      width: 100%;
+      height: 0;
+      border: 1px dashed var(--color-light);
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__balance-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  &__balance__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__number::-webkit-outer-spin-button,
+  &__number::-webkit-inner-spin-button,
+  &__balance-input::-webkit-outer-spin-button,
+  &__balance-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &__balance-input,
+  &__number,
+  &__expiry-date,
+  &__owner,
+  &__cvv-input {
+    font: caption;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    -moz-appearance: textfield;
+  }
+
+  &__balance-input,
+  &__number,
+  &__expiry-date,
+  &__owner,
+  &__cvv-input {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--color-light);
+
+    &::placeholder {
+      color: var(--color-light);
+    }
+  }
+
+  &__hidden-balance-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--color-light);
+  }
+
+  &__balance-input {
+    max-width: 70px;
+    margin-right: 16px;
+  }
+
+  &__number {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 9px;
+  }
+
+  &__owner {
+    font-size: 16px;
+  }
+
+  &__expiry-date,
+  &__owner {
+    @include mobile {
+      width: 80%;
+    }
+  }
+
+  &__cvv {
+    position: relative;
+  }
+
+  &__cvv-input {
+    max-width: 40px;
+    margin-right: 10px;
+  }
+
+  &__toggle-visibility {
+    right: -16px;
+  }
+
+  &__warn {
+    top: 100%;
+    min-width: 320px;
+
+    @include mobile {
+      min-width: 200px;
+      top: 70%;
+      left: -5%;
+    }
+
+    &--medium {
+      min-width: 220px;
+
+      @include mobile {
+        min-width: 120px;
+      }
+    }
+
+    &--small {
+      min-width: 120px;
+
+      @include mobile {
+        min-width: 110px;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

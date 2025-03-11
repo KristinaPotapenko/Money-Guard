@@ -1,0 +1,94 @@
+@use "../../abstracts/media" as *;
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+
+  &__cards-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-inline: 20px;
+    max-width: 1440px;
+    width: calc(100% - 40px);
+  }
+
+  &__inner {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+
+    &--compact {
+      @include desktop {
+        flex-direction: column;
+      }
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 16px;
+  }
+
+  &__button {
+    margin-bottom: 0;
+  }
+
+  &__accounts {
+    max-height: 400px;
+
+    .simplebar-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      width: 100%;
+      justify-items: center;
+
+      @media (min-width: 1280px) and (max-width: 1440px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      @include tablet {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .simplebar-content::before,
+    .simplebar-content::after {
+      content: "";
+      display: none;
+    }
+
+    .simplebar-track.simplebar-vertical {
+      margin-right: 8px;
+      width: 4px !important;
+      background-color: rgba(255, 255, 255, 0.2) !important;
+      border-radius: 4px;
+    }
+
+    .simplebar-scrollbar {
+      width: 2px !important;
+      margin-left: 1px !important;
+      background-color: rgba(255, 255, 255, 0.6) !important;
+      border-radius: 4px;
+    }
+  }
+
+  &__diagram {
+    flex-grow: 2;
+  }
+
+  &__cards {
+    flex-grow: 3;
+  }
+}

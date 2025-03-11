@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as *;
+
+.loader {
+  @include fixed-overlay();
+
+  &.visually-hidden-overlay {
+    @include visually-hidden-overlay();
+  }
+
+  &:not(.visually-hidden-overlay) {
+    @include visible-overlay();
+  }
+
+  &__inner {
+    @include abs-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__circle {
+    animation: rotateClockwise 1.5s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

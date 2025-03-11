@@ -1,0 +1,44 @@
+@use "../abstracts/media" as *;
+
+.warn {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  width: 90%;
+  padding: 4px;
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  translate: 0% 30%;
+  z-index: 10;
+
+  &--big {
+    left: -16px;
+    top: 140%;
+    width: 140%;
+  }
+
+  @include mobile {
+    width: 90%;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 16px;
+    height: 16px;
+    rotate: 45deg;
+    background-color: var(--color-light);
+    border-radius: 2px;
+  }
+  &--message {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-dark);
+    text-align: center;
+  }
+}

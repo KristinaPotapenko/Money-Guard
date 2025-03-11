@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MoneyGuard</title>
+  <link href="style.min.css" rel="stylesheet"></head>
+  <body class="body">
+    <div class="blocks">
+      <div class="block block--mb">
+        <div class="sidebar">
+          <div class="sidebar__logo logo">
+            <img class="logo__image" src="images/logo.png" alt="logo" />
+            <a href="./add-transaction.html" class="logo__description"
+              >MoneyGuard</a
+            >
+          </div>
+          <div class="sidebar__content">
+            <div class="sidebar__user-information">
+              <div class="sidebar__user-photo user-photo">
+                <img
+                  class="user-information__image user-photo-js"
+                  src="images/user-photo.png"
+                  alt="User Photo"
+                />
+              </div>
+              <div class="sidebar__user-sup">
+                <p>Welcome back!</p>
+              </div>
+              <a
+                href="./user-information.html"
+                class="sidebar__user-name user-name-js"
+              ></a>
+            </div>
+            <nav class="sidebar__menu">
+              <ul class="sidebar__list">
+                <li class="sidebar__item">
+                  <div class="sidebar__link-wrap">
+                    <svg
+                      width="25"
+                      height="24"
+                      viewBox="0 0 25 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M3.5 9L12.5 2L21.5 9V20C21.5 20.5304 21.2893 21.0391 20.9142 21.4142C20.5391 21.7893 20.0304 22 19.5 22H5.5C4.96957 22 4.46086 21.7893 4.08579 21.4142C3.71071 21.0391 3.5 20.5304 3.5 20V9Z"
+                        stroke="#F8F8F8"
+                        stroke-width="2"
+                        stroke-linecap="square"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 22V12H15.5V22"
+                        stroke="#F8F8F8"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <a href="./dashboard.html" class="sidebar__link"
+                      >Dashboard</a
+                    >
+                  </div>
+                </li>
+                <li class="sidebar__item">
+                  <div class="sidebar__link-wrap">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 8V6H7V8H21ZM21 16V11H7V16H21ZM21 4C21.5304 4 22.0391 4.21071 22.4142 4.58579C22.7893 4.96086 23 5.46957 23 6V16C23 16.5304 22.7893 17.0391 22.4142 17.4142C22.0391 17.7893 21.5304 18 21 18H7C6.46957 18 5.96086 17.7893 5.58579 17.4142C5.21071 17.0391 5 16.5304 5 16V6C5 4.89 5.89 4 7 4H21ZM3 20H18V22H3C2.46957 22 1.96086 21.7893 1.58579 21.4142C1.21071 21.0391 1 20.5304 1 20V9H3V20Z"
+                        fill="#F8F8F8"
+                      />
+                    </svg>
+                    <a href="./cards-information.html" class="sidebar__link"
+                      >My Cards</a
+                    >
+                  </div>
+                </li>
+                <li class="sidebar__item">
+                  <div class="sidebar__link-wrap is-active">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 12.5C11.0717 12.5 10.1815 12.8687 9.52513 13.5251C8.86875 14.1815 8.5 15.0717 8.5 16C8.5 16.9283 8.86875 17.8185 9.52513 18.4749C10.1815 19.1313 11.0717 19.5 12 19.5C12.9283 19.5 13.8185 19.1313 14.4749 18.4749C15.1313 17.8185 15.5 16.9283 15.5 16C15.5 15.0717 15.1313 14.1815 14.4749 13.5251C13.8185 12.8687 12.9283 12.5 12 12.5ZM10.5 16C10.5 15.6022 10.658 15.2206 10.9393 14.9393C11.2206 14.658 11.6022 14.5 12 14.5C12.3978 14.5 12.7794 14.658 13.0607 14.9393C13.342 15.2206 13.5 15.6022 13.5 16C13.5 16.3978 13.342 16.7794 13.0607 17.0607C12.7794 17.342 12.3978 17.5 12 17.5C11.6022 17.5 11.2206 17.342 10.9393 17.0607C10.658 16.7794 10.5 16.3978 10.5 16Z"
+                        fill="#F8F8F8"
+                      />
+                      <path
+                        d="M17.526 5.11594L14.347 0.658936L2.658 9.99693L2.01 9.98993V9.99994H1.5V21.9999H22.5V9.99994H21.538L19.624 4.40094L17.526 5.11594ZM19.425 9.99994H9.397L16.866 7.45394L18.388 6.96694L19.425 9.99994ZM15.55 5.78994L7.84 8.41794L13.946 3.53994L15.55 5.78994ZM3.5 18.1689V13.8289C3.9219 13.6794 4.30511 13.4377 4.6217 13.1212C4.93828 12.8048 5.18027 12.4217 5.33 11.9999H18.67C18.8197 12.4219 19.0616 12.8051 19.3782 13.1217C19.6948 13.4383 20.078 13.6803 20.5 13.8299V18.1699C20.078 18.3196 19.6948 18.5616 19.3782 18.8781C19.0616 19.1947 18.8197 19.578 18.67 19.9999H5.332C5.18218 19.5776 4.93996 19.1941 4.62302 18.8773C4.30607 18.5605 3.9224 18.3185 3.5 18.1689Z"
+                        fill="#F8F8F8"
+                      />
+                    </svg>
+                    <a href="./transactions.html" class="sidebar__link"
+                      >Transactions</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <button class="sidebar__logout-button button logout-button-js">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14 8L14 6C14 5.46957 13.7893 4.96086 13.4142 4.58579C13.0391 4.21072 12.5304 4 12 4L5 4C4.46957 4 3.96086 4.21071 3.58579 4.58579C3.21071 4.96086 3 5.46957 3 6L3 18C3 18.5304 3.21071 19.0391 3.58578 19.4142C3.96086 19.7893 4.46956 20 5 20L12 20C12.5304 20 13.0391 19.7893 13.4142 19.4142C13.7893 19.0391 14 18.5304 14 18L14 16"
+                  stroke="#F8F8F8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12L21 12M21 12L18 9M21 12L18 15"
+                  stroke="#F8F8F8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Logout
+            </button>
+          </div>
+          <button class="burger-button visible-mobile" type="button">
+            <span class="burger-button__icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="block block--big">
+        <div class="add-card block__inner">
+          <h1 class="add-card__title block__title">Add transaction</h1>
+          <form action="" class="account-form form-js">
+            <div class="account-form__content">
+              <div class="account-form__input-wrap">
+                <input
+                  class="account-form__input input input-js"
+                  name="primary_account_number"
+                  type="text"
+                  placeholder="12XX XXXX XXXX XX66"
+                />
+                <div class="account-form__warn warn visually-hidden">
+                  <p class="account-form__warn--message warn--message"></p>
+                </div>
+              </div>
+              <div class="account-form__input-wrap">
+                <input
+                  class="account-form__input input input-js"
+                  name="sender_recipient"
+                  type="text"
+                  placeholder="Sender/Recipient"
+                />
+                <div class="account-form__warn warn visually-hidden">
+                  <p class="account-form__warn--message warn--message"></p>
+                </div>
+              </div>
+              <div class="account-form__input-wrap">
+                <input
+                  class="account-form__input input input-js"
+                  name="amount"
+                  type="number"
+                  placeholder="Amount"
+                />
+                <div class="account-form__warn warn visually-hidden">
+                  <p class="account-form__warn--message warn--message"></p>
+                </div>
+              </div>
+              <div class="account-form__select select">
+                <div class="select__control">
+                  <div class="account-form__input-wrap">
+                    <input
+                      class="account-form__input select__current input input-js"
+                      name="type"
+                      type="text"
+                      placeholder="Transaction type"
+                      readonly
+                    />
+                    <div class="account-form__warn warn visually-hidden">
+                      <p class="account-form__warn--message warn--message"></p>
+                    </div>
+                  </div>
+                </div>
+                <ul class="select__list visually-hidden">
+                  <li class="select__item">Income</li>
+                  <li class="select__item">Expense</li>
+                </ul>
+              </div>
+              <div class="account-form__select select">
+                <div class="select__control">
+                  <div class="account-form__input-wrap">
+                    <input
+                      class="account-form__input select__current input input-js"
+                      name="category"
+                      type="text"
+                      placeholder="Categories"
+                      readonly
+                    />
+                    <div class="account-form__warn warn visually-hidden">
+                      <p class="account-form__warn--message warn--message"></p>
+                    </div>
+                  </div>
+                </div>
+                <ul
+                  class="select__list visually-hidden categories-select-js"
+                ></ul>
+              </div>
+              <button
+                class="account-form__button button button--large"
+                type="submit"
+              >
+                Add transaction
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="loader visually-hidden-overlay">
+      <div class="loader__inner">
+        <svg
+          class="loader__circle"
+          width="100"
+          height="100"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <circle cx="30" cy="5" r="5" fill="#ffffff" />
+            <path
+              id="Ellipse 12"
+              d="M35 55C35 57.7614 32.7614 60 30 60C27.2386 60 25 57.7614 25 55C25 52.2386 27.2386 50 30 50C32.7614 50 35 52.2386 35 55Z"
+              fill="#434343"
+            />
+            <path
+              d="M46.8302 10.8493C45.4495 13.2408 42.3916 14.0602 40.0001 12.6795C37.6086 11.2988 36.7893 8.24081 38.17 5.84935C39.5507 3.45788 42.6086 2.63851 45.0001 4.01922C47.3916 5.39993 48.2109 8.45788 46.8302 10.8493Z"
+              fill="#efefef"
+            />
+            <path
+              d="M21.8302 54.1506C20.4495 56.5421 17.3916 57.3615 15.0001 55.9807C12.6086 54.6 11.7893 51.5421 13.17 49.1506C14.5507 46.7592 17.6086 45.9398 20.0001 47.3205C22.3916 48.7012 23.2109 51.7592 21.8302 54.1506Z"
+              fill="#3e3e3e"
+            />
+            <path
+              d="M54.1505 21.8301C51.759 23.2108 48.7011 22.3914 47.3204 20C45.9397 17.6085 46.759 14.5506 49.1505 13.1699C51.542 11.7891 54.5999 12.6085 55.9806 15C57.3613 17.3914 56.542 20.4494 54.1505 21.8301Z"
+              fill="#d7d7d7"
+            />
+            <path
+              d="M10.8492 46.8301C8.45776 48.2108 5.39981 47.3914 4.0191 45C2.63838 42.6085 3.45776 39.5506 5.84922 38.1699C8.24069 36.7891 11.2986 37.6085 12.6794 40C14.0601 42.3914 13.2407 45.4494 10.8492 46.8301Z"
+              fill="#313131"
+            />
+            <path
+              d="M21.8302 5.84935C23.2109 8.24081 22.3916 11.2988 20.0001 12.6795C17.6086 14.0602 14.5507 13.2408 13.17 10.8493C11.7893 8.45788 12.6086 5.39993 15.0001 4.01922C17.3916 2.63851 20.4495 3.45788 21.8302 5.84935Z"
+              fill="#919191"
+            />
+            <path
+              d="M46.8302 49.1506C48.2109 51.5421 47.3916 54.6 45.0001 55.9807C42.6086 57.3615 39.5507 56.5421 38.17 54.1506C36.7893 51.7592 37.6086 48.7012 40.0001 47.3205C42.3916 45.9398 45.4495 46.7592 46.8302 49.1506Z"
+              fill="#1c1c1c"
+            />
+            <path
+              d="M10.8495 13.1699C13.2409 14.5506 14.0603 17.6085 12.6796 20C11.2989 22.3914 8.24093 23.2108 5.84947 21.8301C3.458 20.4494 2.63863 17.3914 4.01934 15C5.40005 12.6085 8.458 11.7891 10.8495 13.1699Z"
+              fill="#868686"
+            />
+            <path
+              d="M54.1507 38.1699C56.5422 39.5506 57.3616 42.6085 55.9809 45C54.6002 47.3914 51.5422 48.2108 49.1507 46.8301C46.7593 45.4494 45.9399 42.3914 47.3206 40C48.7013 37.6085 51.7593 36.7891 54.1507 38.1699Z"
+              fill="#161616"
+            />
+            <path
+              d="M5 25C7.76142 25 10 27.2386 10 30C10 32.7614 7.76142 35 5 35C2.23858 35 0 32.7614 0 30C0 27.2386 2.23858 25 5 25Z"
+              fill="#545454"
+            />
+            <circle
+              cx="55"
+              cy="30"
+              r="5"
+              transform="rotate(-90 55 30)"
+              fill="#000000"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="modal visually-hidden-overlay">
+      <div class="modal__inner">
+        <div class="modal__close-button close-button">
+          <div class="close-button__icon"></div>
+          <span class="visually-hidden">Close navigation menu</span>
+        </div>
+        <div class="modal__body">
+          <h2 class="modal__title"></h2>
+          <p class="modal__description"></p>
+          <a class="modal__link" href=""></a>
+        </div>
+      </div>
+    </div>
+  <script defer src="bundle.js"></script></body>
+</html>

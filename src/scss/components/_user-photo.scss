@@ -1,0 +1,14 @@
+@use "../abstracts/mixins" as *;
+
+.user-photo {
+  @include square(100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background-color: #2b2b2b;
+  border: 2px var(--color-light) dashed;
+  border-radius: 100%;
+}

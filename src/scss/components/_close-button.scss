@@ -1,0 +1,48 @@
+@use "../abstracts/media" as *;
+@use "../abstracts/mixins" as *;
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  &__icon {
+    @include square(32px);
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      width: 24px;
+      height: 3px;
+      background-color: var(--color-light);
+      border-radius: var(--border-radius);
+      transition-duration: var(--transition-duration);
+
+      @include tablet {
+        left: 6px;
+        width: 18px;
+        height: 2px;
+      }
+    }
+
+    &::before {
+      rotate: 45deg;
+    }
+
+    &::after {
+      rotate: -45deg;
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
