@@ -55,7 +55,7 @@ const emailInput = document.querySelector('.input-js[name="email"]');
 if (resendConfirmationEmailButton) {
   resendConfirmationEmailButton.addEventListener("click", async (event) => {
     event.preventDefault();
-    const currentUrl = document.location.pathname;
+    const currentUrl = "/" + window.location.pathname.split("/").pop();
 
     const isValid = validateAndWarnEmail(emailInput);
 

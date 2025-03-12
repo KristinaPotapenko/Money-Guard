@@ -19,7 +19,7 @@ import "simplebar/dist/simplebar.css";
 
 const container = document.querySelector(".cards-information__accounts");
 const transactionsList = document.querySelector(".transactions__list");
-const currentUrl = window.location.pathname;
+const currentUrl = "/" + window.location.pathname.split("/").pop();
 
 if (container) {
   container.addEventListener("click", (event) => {

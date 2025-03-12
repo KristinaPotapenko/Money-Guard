@@ -9,7 +9,7 @@ if (categoriesList) {
 }
 
 async function populateCountries() {
-  const currentUrl = document.location.pathname;
+  const currentUrl = "/" + window.location.pathname.split("/").pop();
 
   try {
     const response = await getExpenseCategories();

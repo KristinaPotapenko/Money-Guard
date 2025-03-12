@@ -5,7 +5,7 @@ import { errorMessages } from "../messages/error-messages";
 import SimpleBar from "simplebar";
 import "simplebar/dist/simplebar.css";
 
-const currentUrl = window.location.pathname;
+const currentUrl = "/" + window.location.pathname.split("/").pop();
 
 let offset = 0;
 const limit = 10;

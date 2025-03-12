@@ -3,7 +3,7 @@ import { errorMessages } from "../messages/error-messages.js";
 import { showModalQueue } from "../components/modal.js";
 import { getLocalStorageItem } from "../local-storage-utils/local-storage-utils.js";
 
-const currentUrl = window.location.pathname;
+const currentUrl = "/" + window.location.pathname.split("/").pop();
 const cvvBlock = document.querySelector(".cvv-block-js");
 
 if (currentUrl === "/update-card-information.html") {

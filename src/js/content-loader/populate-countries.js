@@ -9,7 +9,7 @@ if (countrySelectElements) {
 }
 
 async function populateCountries() {
-  const currentUrl = window.location.pathname;
+  const currentUrl = "/" + window.location.pathname.split("/").pop();
 
   try {
     const response = await getCountry();

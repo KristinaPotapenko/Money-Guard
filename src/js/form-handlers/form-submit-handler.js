@@ -11,7 +11,7 @@ const form = document.querySelector(".form-js");
 const loader = document.querySelector(".loader");
 
 window.addEventListener("load", () => {
-  const currentUrl = window.location.pathname;
+  const currentUrl = "/" + window.location.pathname.split("/").pop();
 
   if (form) {
     form.addEventListener("submit", (e) => {

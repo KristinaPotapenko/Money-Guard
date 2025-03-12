@@ -2,7 +2,7 @@ import { getUserInformation } from "../api/user-api.js";
 import { showModalQueue } from "../components/modal.js";
 import { errorMessages } from "../messages/error-messages.js";
 
-const currentUrl = window.location.pathname;
+const currentUrl = "/" + window.location.pathname.split("/").pop();
 const userInformationBlock = document.querySelector(
   ".sidebar__user-information"
 );

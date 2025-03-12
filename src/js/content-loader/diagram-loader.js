@@ -7,7 +7,7 @@ import SimpleBar from "simplebar";
 import "simplebar/dist/simplebar.css";
 
 const container = document.querySelector(".diagram-container-js");
-const currentUrl = window.location.pathname;
+const currentUrl = "/" + window.location.pathname.split("/").pop();
 
 if (container) {
   loadDiagramInformation();
