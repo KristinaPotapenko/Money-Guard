@@ -6,7 +6,7 @@ export const successActions = {
       "Success",
       "Login successful!",
       "Ok",
-      `${window.location.origin}/dashboard.html`
+      `${window.location.origin}/Money-Guard/dashboard.html`
     );
   },
   "/sign-up.html": () => {
@@ -14,7 +14,7 @@ export const successActions = {
       "Success",
       "A confirmation email has been sent to your email.",
       "Ok",
-      `${window.location.origin}/`
+      `${window.location.origin}/Money-Guard/`
     );
   },
   "/password-change-email.html": () => {
@@ -26,7 +26,7 @@ export const successActions = {
     );
   },
   "/password-change-code.html": () => {
-    window.location.href = `${window.location.origin}/password-change-newPassword.html`;
+    window.location.href = `${window.location.origin}/Money-Guard/password-change-newPassword.html`;
   },
 
   "/password-change-newPassword.html": () => {
@@ -43,7 +43,7 @@ export const successActions = {
       "Success",
       "Profile info updated!",
       "Ok",
-      `${window.location.origin}/user-information.html`
+      `${window.location.origin}/Money-Guard/user-information.html`
     );
   },
   "/add-card.html": () => {
@@ -51,7 +51,7 @@ export const successActions = {
       "Success",
       "Сard was successfully added!",
       "Ok",
-      `${window.location.origin}/cards-information.html`
+      `${window.location.origin}/Money-Guard/cards-information.html`
     );
   },
   "/add-transaction.html": () => {
@@ -59,7 +59,7 @@ export const successActions = {
       "Success",
       "Transaction was successfully added!",
       "Ok",
-      `${window.location.origin}/add-transaction.html`
+      `${window.location.origin}/Money-Guard/add-transaction.html`
     );
   },
   "/update-card-information.html": () => {
@@ -67,7 +67,7 @@ export const successActions = {
       "Success",
       "Card information has been successfully changed!",
       "Ok",
-      `${window.location.origin}/card-information.html`
+      `${window.location.origin}/Money-Guard/card-information.html`
     );
   },
 };

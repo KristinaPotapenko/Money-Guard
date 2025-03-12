@@ -28,7 +28,7 @@ if (container) {
     if (card) {
       const cardNumber = card.querySelector(".card__number");
       setLocalStorageItem("card_number", cardNumber.textContent);
-      window.location.href = `${window.origin}/card-information.html`;
+      window.location.href = `${window.origin}/Money-Guard/card-information.html`;
     }
   });
 }

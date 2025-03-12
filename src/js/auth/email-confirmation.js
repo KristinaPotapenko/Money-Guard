@@ -32,7 +32,7 @@ if (currentUrl.includes("verify.html")) {
         "Success",
         "Your e-mail has been confirmed!",
         "Go to login",
-        `${window.location.origin}/`
+        `${window.location.origin}/Money-Guard/`
       );
     } catch (error) {
       let errorMessage = error.message;

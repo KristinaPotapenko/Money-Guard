@@ -12,7 +12,7 @@ if (logoutButton) {
 }
 
 async function logoutUser() {
-  const currentUrl = window.location.pathname;
+  const currentUrl = "/" + window.location.pathname.split("/").pop();
 
   try {
     const response = await logout();
