@@ -31,7 +31,7 @@ async function logoutUser() {
       "Success",
       "You have successfully logged out of your account.",
       "Ok",
-      `${window.location.origin}/`
+      `${window.location.origin}/Money-Guard/`
     );
 
     removeLocalStorageItem("access_token");
