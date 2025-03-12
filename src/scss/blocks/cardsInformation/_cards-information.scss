@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    min-height: 100%;
     padding: 24px;
     border: var(--border);
     border-radius: var(--border-radius-medium);
