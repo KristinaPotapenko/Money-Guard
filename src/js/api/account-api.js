@@ -3,7 +3,7 @@ import { getAuthorizationHeader, fetchData } from "./api-service";
 export async function getCardInformation(data) {
   const headers = getAuthorizationHeader();
 
-  const response = await fetchData(data, "GET", headers);
+  const response = await fetchData(`accounts/${data}`, "GET", headers);
 
   return response;
 }
