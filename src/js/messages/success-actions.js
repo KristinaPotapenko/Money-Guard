@@ -22,7 +22,7 @@ export const successActions = {
       "Success",
       "A confirmation code has been sent to your e-mail.",
       "Go",
-      `${window.origin}/password-change-code.html`
+      `${window.origin}/Money-Guard/password-change-code.html`
     );
   },
   "/password-change-code.html": () => {
@@ -34,7 +34,7 @@ export const successActions = {
       "Success",
       "Password successfully changed!",
       "Go to the login page",
-      `${window.location.origin}/`
+      `${window.location.origin}/Money-Guard/`
     );
   },
 
