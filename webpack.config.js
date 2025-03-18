@@ -108,7 +108,6 @@ module.exports = {
       template: path.resolve(__dirname, "src", "verify.html"),
       scriptLoading: "defer",
       inject: "body",
-      publicPath: "/",
     }),
     new HtmlWebpackPlugin({
       filename: "dashboard.html",
