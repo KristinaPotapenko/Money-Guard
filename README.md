@@ -34,9 +34,9 @@ You can find the backend code here:
 ## 📧 Important Notice
 
 The email verification logic is currently being updated.  
-To try out the app, please use the following credentials for login:
-Email: iv.inna04@gmail.com
-Password: Qq123456
+To try out the app, please use the following credentials for login:<br>
+`Email: iv.inna04@gmail.com`<br>
+`Password: Qq123456`
 
 ## 🚀 How to Run Locally
 
@@ -46,7 +46,6 @@ Password: Qq123456
    npm start
    Open http://localhost:3000 in your browser to use the app.
 
-   ---
 
 ## 📬 Contact
 
