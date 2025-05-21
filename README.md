@@ -9,7 +9,7 @@
 - HTML  
 - SCSS  
 - JavaScript  
-- localStorage  
+- `localStorage` 
 - Webpack  
 
 ---
